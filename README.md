@@ -12,7 +12,7 @@ def print_lyrics():
 ```
 图片 ![图片名](网址）![cmd-markdown-logo](https://www.zybuluo.com/static/img/logo.png)）
 三个及以上的小短线可以画水平线
----
+-----
 几个井号代表第几级标题
 #一级标题
 ##二级标题
@@ -26,14 +26,20 @@ Now let me introduce myself,I am a student in [school of physics and technology,
 I introduce my major **physics** by a series of *formulas*:
 ##Classical mechanics
 ###Newtonian mechanics
+
 $$\vec{F}=m\vec{a}$$
+
 ###Analytical mechanics
 ####Lagrange equation
 
 ##Electrodynamics
 **differential form**
+
 $$\nabla\cdot\vec{E}=\frac{\rho}{\epsilon_0}$$
+
 $$\nabla\times\vec{E}=-\frac{\partial\vec{B}}{\partial t}$$
+
 $$\nabla\cdot\vec{B}=0$$
+
 $$\nabla\times\vec{B}=\mu_0\vec{j}+\mu_0\epsilon_0\frac{\partial\vec{E}}{\partial t}$$
 ……
