@@ -12,7 +12,8 @@
 比较自豪的一点是，由于充分利用数组list和矩阵，我用十分简洁的语句完成了作业L1,L2，并且这样的做法可以推广到26个字母，
 缺点就是由于矩阵合并的困难，目前还没有能实每个字母做成单个模块，然后直接调用，后续将会改进。
 作业L1[GUO.py](https://github.com/guoxiaowhu/computationalphysics_N2013301020099/blob/master/GUO.py)
+输出结果截图![GUO.py](https://raw.githubusercontent.com/guoxiaowhu/computationalphysics_N2013301020099/master/GUO.png)
 作业L2[OUG.py](https://github.com/guoxiaowhu/computationalphysics_N2013301020099/blob/master/OUG.py)
-
+输出结果截图![OUG.py](https://raw.githubusercontent.com/guoxiaowhu/computationalphysics_N2013301020099/master/OUG.png)
 ##致谢
 感谢敬雷同学提供了一个很好的思路，我的程序编写的主体思路来源于他，此外，我还与许多同学进行讨论分析过，试图寻找较好的方法，感谢他们。
