@@ -2,8 +2,7 @@
 G=[[' ' for i in range (5)]for j in range (5)] #blank matrix
 for i in [1,2,3]:
     G[0][i]='#'
-for i in [0]:
-    G[1][i]='#'
+G[1][0]='#'
 for i in [0,2,3,4]:
     G[2][i]='#'
 for i in [0,3,4]:
@@ -34,7 +33,6 @@ for j in range(5):
         OUG[i][j+10]=G[i][j]
 
 for i in range(5):
-    print '\n'
     for j in range(15):
         print OUG[i][j],
-
+    print

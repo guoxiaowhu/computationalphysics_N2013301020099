@@ -2,8 +2,7 @@
 G=[[' ' for i in range (5)]for j in range (5)] #blank matrix
 for i in [1,2,3]:
     G[0][i]='#'
-for i in [0]:
-    G[1][i]='#'
+G[1][0]='#'
 for i in [0,2,3,4]:
     G[2][i]='#'
 for i in [0,3,4]:
@@ -41,11 +40,11 @@ for i in range(5):
         GUO[i][j+5]=U[i][j]
         GUO[i][j+10]=O[i][j]
 for i in range(5):
-    print '\n'
+    print #its function is equal to print'\n'
     for j in range(15):
         print GUO[i][j],#This comma can't be lost
 
-#putout to txt file
+#output to txt file
 f=open("GUO.txt",'wb')
 for i in range(5):
     f.write('\n')
