@@ -16,7 +16,7 @@
 - 作业L2[OUG.py](https://github.com/guoxiaowhu/computationalphysics_N2013301020099/blob/master/OUG.py)
 输出结果截图![OUG.py](https://raw.githubusercontent.com/guoxiaowhu/computationalphysics_N2013301020099/master/OUG.png)
 
-等级3的作业，To be more romantically,I make an animation of a moving heart as following link:
+等级3的作业，To be more romantically,I make an animation of a moving heart as following link, the heart can move from left to right. 
 - 作业L3[moving_heart.py](https://github.com/guoxiaowhu/computationalphysics_N2013301020099/blob/master/moving_heart.py)
 - and it output file[moving_heart.txt](https://github.com/guoxiaowhu/computationalphysics_N2013301020099/blob/master/moving_heart.txt)
 - and picture ![moving_heart.png](https://raw.githubusercontent.com/guoxiaowhu/computationalphysics_N2013301020099/master/moving_heart.png)
