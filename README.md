@@ -1,4 +1,6 @@
 # computationalphysics_N2013301020099
+大家好！我是*郭潇*
+这里是[第三次作业的链接](https://github.com/guoxiaowhu/computationalphysics_N2013301020099/blob/master/Third%20homework.md)
 为方便使用这里给出markdown的语法
 单星号*斜体*
 双星号**粗体**
