@@ -24,7 +24,9 @@
 - 作业L3[moving_heart.py](https://github.com/guoxiaowhu/computationalphysics_N2013301020099/blob/master/moving_heart.py)
 - and it output file[moving_heart.txt](https://github.com/guoxiaowhu/computationalphysics_N2013301020099/blob/master/moving_heart.txt)
 - and picture ![moving_heart.png](https://raw.githubusercontent.com/guoxiaowhu/computationalphysics_N2013301020099/master/moving_heart.png)
+
 ###有待改进之处
 一是可以做成gif文件，自动动态显示，二是还可以添加旋转，三是添加输入实现人机交互，变换花样。
+
 ##致谢
 感谢敬雷同学提供了一个很好的思路，我的程序编写的大部分思路来源于他，此外，我还与许多同学进行讨论分析过，试图寻找较好的方法，感谢他们。
