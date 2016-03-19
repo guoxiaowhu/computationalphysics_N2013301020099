@@ -1,6 +1,14 @@
 # computationalphysics_N2013301020099
 大家好！我是*郭潇*
+#作业列表
+##第三次作业
 这里是[第三次作业的链接](https://github.com/guoxiaowhu/computationalphysics_N2013301020099/blob/master/Third%20homework.md)
+##第四次作业
+第四次作业可能要输入公式，拟在作业部落上写，并在这里给出超链接
+#my resume
+------
+
+#附：markdown的语法
 为方便使用这里给出markdown的语法
 单星号*斜体*
 双星号**粗体**
@@ -22,7 +30,7 @@ def print_lyrics():
 ####……
 书写公式用双$
 $$E=mc^2$$
-
+这里无法显示公式
 
 Now let me introduce myself,I am a student in [school of physics and technology,Wuhan University](http://physics.whu.edu.cn/).
 I introduce my major **physics** by a series of *formulas*:
