@@ -21,13 +21,13 @@ for i in range(int(time/dt)):
     print >> f,t[-1],N_A[-1],N_B[-1]
 f.close()
 #plot
-plot(t,N_A,'--')
-plot(t,N_B)
+plot(t,N_A,'--',t,N_B)
+legend(('N_A','N_B'))
 title('problem 1.5',fontsize=20)
 xlabel('t/s')
 ylabel('N')
-show()
 savefig('chapter1.png')
+show()
 
 
 
