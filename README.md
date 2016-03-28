@@ -5,7 +5,7 @@
 这里是[第三次作业的链接](https://github.com/guoxiaowhu/computationalphysics_N2013301020099/blob/master/Third%20homework.md)
 ##第四次作业
 第四次作业要输入公式，在作业部落上写，并在这里给出[第四次作业的链接](https://www.zybuluo.com/guoxiaowhu/note/318362)
-#my resume
+#My resume
 ------
 
 Email: guoxiao1995@qq.com
