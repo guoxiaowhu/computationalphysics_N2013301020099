@@ -42,9 +42,9 @@ for i in range(int(time/dt)):
     B=N_B[i]+dt/tau*(N_A[i]-N_B[i])
     N_B.append(B)
     t.append(t[i]+dt)
-    Ae=(N_A0+N_B0+(N_A0-N_B0)*exp(-2*t[i]/tau))/2
+    Ae=(N_A0+N_B0+(N_A0-N_B0)*exp(-2*t[i+1]/tau))/2#Attn:t[i+1]!
     N_A_exact.append(Ae)
-    Be=(N_A0+N_B0-(N_A0-N_B0)*exp(-2*t[i]/tau))/2
+    Be=(N_A0+N_B0-(N_A0-N_B0)*exp(-2*t[i+1]/tau))/2
     N_B_exact.append(Be)
     error_A.append(A-Ae)
     error_B.append(B-Be)
