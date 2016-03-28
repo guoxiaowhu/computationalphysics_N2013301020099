@@ -24,13 +24,13 @@ Major: Physics
 ##Research Experience
 ------
 
-	Undergraduate research at School of Physics and Technology, Wuhan University(2015)
+- Undergraduate research at School of Physics and Technology, Wuhan University(2015)
 Content: Research of microstructure of pure vanadium irradiated by Helium ions under 350℃
 Advisor: Liping Guo
-	Internship at Institute of Physics, Chinese Academy of Science (Aug. 2015)
+- Internship at Institute of Physics, Chinese Academy of Science (Aug. 2015)
 Content: Magnetic confinement plasma physics
 Advisor: Wenlu Zhang
-	Chinese Undergraduate Physicists’ Tournament (CUPT)(2015)
+- Chinese Undergraduate Physicists’ Tournament (CUPT)(2015)
 Content: Plume of smoke, Artificial muscle, Liquid film motor, Two balloons and so on, problems from 2015 IYPT
 Advisor: Chunqing He et al.
 
