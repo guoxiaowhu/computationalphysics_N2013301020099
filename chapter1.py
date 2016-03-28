@@ -35,7 +35,7 @@ for i in range(int(time/dt)):
 f.close()
 
 #analytical solution
-T=np.linspace(0,time,400,endpoint=True)
+T=np.linspace(0,time,400,endpoint=False)#doesn't contain the last point
 for i in range(400):
     N_A_exact.append((N_A0+N_B0+(N_A0-N_B0)*exp(-2*T[i]/tau))/2)
     N_B_exact.append((N_A0+N_B0-(N_A0-N_B0)*exp(-2*T[i]/tau))/2)
@@ -47,7 +47,7 @@ plot(t,N_B,'--',color='black')
 plot(T,N_A_exact,color='blue',linewidth=1.0,linestyle='-')
 plot(T,N_B_exact,color='black',linewidth=1.0,linestyle='-')
 legend(('N_A(numerical)','N_B(numerical)','N_A(exact)','N_B(exact)'))
-title('problem 1.5',fontsize=20)
+title('Problem 1.5',fontsize=20)
 xlabel('t(s)')
 ylabel('N')
 xlim(0,10)
