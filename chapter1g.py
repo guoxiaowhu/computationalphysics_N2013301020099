@@ -1,6 +1,6 @@
 #This is a program to analyse the error of numerical solution of problem 1.5
 """
-Updated on Mar 28
+Finished on Mar 28
 Author:GUO Xiao
 2013301020099
 
@@ -35,6 +35,7 @@ dt=float(input('time step='))
 
 f=open('chapter1_error.txt','w')
 f.write('error')
+f.write('\n')
 #calculation and storage
 for i in range(int(time/dt)):
     A=N_A[i]+dt/tau*(N_B[i]-N_A[i])
