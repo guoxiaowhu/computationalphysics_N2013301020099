@@ -8,6 +8,38 @@
 #my resume
 ------
 
+Email: guoxiao1995@qq.com
+
+School of Physics and Technology, 
+Wuhan University, Wuhan, 
+430072 P. R. China
+
+##Education
+------
+
+School of Physics and Technology, Wuhan University.(September 2013 - July 2017)
+Bachelor’s Degree Candidate 
+Major: Physics
+
+##Research Experience
+------
+
+	Undergraduate research at School of Physics and Technology, Wuhan University(2015)
+Content: Research of microstructure of pure vanadium irradiated by Helium ions under 350℃
+Advisor: Liping Guo
+	Internship at Institute of Physics, Chinese Academy of Science (Aug. 2015)
+Content: Magnetic confinement plasma physics
+Advisor: Wenlu Zhang
+	Chinese Undergraduate Physicists’ Tournament (CUPT)(2015)
+Content: Plume of smoke, Artificial muscle, Liquid film motor, Two balloons and so on, problems from 2015 IYPT
+Advisor: Chunqing He et al.
+
+##Research Interest
+------
+I have extensive interests on natural science especially physics and math and enjoy the beauty of them. Nevertheless, what interests me most are particle physics, astrophysics and cosmology. From these most basic subjects of physics, we can appreciate the most fundamental laws and principles of this universe, for instance, a theory of everything, that is my dream. Therefore, I intend to research these field during postgraduate.
+
+
+
 #附：markdown的语法
 为方便使用这里给出markdown的语法
 单星号*斜体*
