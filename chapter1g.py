@@ -60,7 +60,6 @@ legend(('error_A','error_B'))
 title('Error analysis',fontsize=20)
 xlabel('t(s)')
 ylabel('error')
-xlim(0,10)
 savefig('chapter1_error.png')
 show()
 

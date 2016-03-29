@@ -1,6 +1,6 @@
 #This is a program to solve problem 1.5
 """
-Updated on Mar 28
+Updated on Mar 29
 Author:GUO Xiao
 2013301020099
 
@@ -50,8 +50,7 @@ legend(('N_A(numerical)','N_B(numerical)','N_A(exact)','N_B(exact)'))
 title('Problem 1.5',fontsize=20)
 xlabel('t(s)')
 ylabel('N')
-xlim(0,10)
-ylim(0,100)
+
 savefig('chapter1.png')
 show()
 
