@@ -8,7 +8,7 @@
 ，另外还以类似的解法给出了[求解problem1.6的程序](https://github.com/guoxiaowhu/computationalphysics_N2013301020099/blob/master/problem1.6.py)(后续将会完善)
 ##第六次作业（第二章）
 [第六次作业的链接](https://www.zybuluo.com/guoxiaowhu/note/331396)（editing……）
-本来打算用三维显示的，结果一运行vpython就崩溃，没有办法显示三维图像，正在想办法……
+本来打算用三维显示的，结果一运行vpython就崩溃，没有办法显示三维图像，正在想办法……先用两张二维的图展示
 #My resume
 ------
 
