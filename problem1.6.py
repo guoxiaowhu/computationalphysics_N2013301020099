@@ -34,7 +34,7 @@ f.close()
 plot(t,N,'--',color='blue')
 legend(('N(numerical)'))
 title('Problem 1.6',fontsize=20)
-xlabel('t(s)')
+xlabel('t(year)')
 ylabel('N')
 
 savefig('problem1.6.png')
