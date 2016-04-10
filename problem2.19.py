@@ -1,4 +1,4 @@
-#This is a program to calculate the ballistic trajectory
+#This is a program to calculate problem 2.19
 """
 Updated on 4/10/2016
 Author:GUO Xiao
@@ -24,22 +24,20 @@ zp=[]
 input
 """
 #parameter
-w=2*pi/24/3600 #rotation angular speed of Earth(rad/s)
 g=9.8 #local gravitational acceleration of Earth(m*s^(-2))
-lat=pi*float(input('latitude(degree,North:+,South:-)='))/180
-m=float(input('mass(kg)='))
-B1=0
+m=0.149 #the mass of ball(kg)
+S0=4.1e-4*m 
+w=2*pi*float(input('angular speed of the ball(rpm)='))/60 #(rad/s)
 #parameter of B2
-a=6.5e-3 #(K/m)
-alpha=2.5
-T0=288 # (K)
-B20=4e-5*m  #initial value
+vd=35 #(m/s)
+delta=5 #(m/s)
+#initial value
 #initial condition
 x.append(0.0)
 y.append(0.0)
 z.append(0.0)
-v0=float(input('v0='))
-phi=pi*float(input('phi(degree)='))/180
+v0=49 #float(input('v0='))#(m/s)
+phi=0 #pi*float(input('phi(degree)='))/180
 theta=pi/2-pi*float(input('elevation angle(degree)='))/180
 vx0=v0*sin(theta)*cos(phi)
 vy0=v0*sin(theta)*sin(phi)
@@ -59,12 +57,13 @@ zp.append(0)
 '''
 calculation
 '''
-f=open('problem2.9.txt','w')
+f=open('problem2.19.txt','w')
 for i in range(int(time/dt)):
-    B2=(1-a*z[i]/T0)**alpha*B20
-    vx.append(vx[i]+dt*(-B1/m*vx[i]-B2/m*v[i]*vx[i]-2*w*vz[i]*cos(lat)+2*w*vy[i]*sin(lat)))
-    vy.append(vy[i]+dt*(-B1/m*vy[i]-B2/m*v[i]*vy[i]-2*w*vx[i]*sin(lat)))
-    vz.append(vz[i]+dt*(-g-B1/m*vz[i]-B2/m*v[i]*vz[i]+2*w*vx[i]*cos(lat)))
+    B2=(0.039+0.0058/(1+exp((v[i]-vd)/delta)))*m
+    flat=0.5*g*(sin(4*w*t[i])-0.25*sin(8*w*t[i])+0.08*sin(12*w*t[i])-0.025*sin(16*w*t[i]))#Flat/m
+    vx.append(vx[i]+dt*(-B2/m*v[i]*vx[i]-S0/m*w*vz[i]-flat*vz[i]/v[i]))
+    vy.append(vy[i]+dt*(-B2/m*v[i]*vy[i]))
+    vz.append(vz[i]+dt*(-g-B2/m*v[i]*vz[i]+S0/m*w*vx[i]+flat*vx[i]/v[i]))
     x.append(x[i]+dt*vx[i+1])
     y.append(y[i]+dt*vy[i+1])
     z.append(z[i]+dt*vz[i+1])
@@ -76,25 +75,22 @@ for i in range(int(time/dt)):
     print t[-1],x[-1],y[-1],z[-1]
     print >> f,x[-1],y[-1],z[-1]
 f.close()
-
-#plot 
+'''
+plot 
+'''
 plot(x,z,color='blue')
 plot(xp,zp,'--',color='blue')
 legend(('z-x','z-x parabola'))
-title('Problem 2.9 z-x',fontsize=20)
+title('Problem 2.19 z-x',fontsize=20)
 xlabel('x(m)')
 ylabel('z(m)')
-savefig('problem2.9_x-z.png')
+savefig('problem2.19_x-z.png')
 show()
 
 plot(y,z,color='red')
 plot(yp,zp,'--',color='red')
 legend(('z-y','z-y parabola'))
-title('Problem 2.9 z-y',fontsize=20)
+title('Problem 2.19 z-y',fontsize=20)
 xlabel('y(m)')
 ylabel('z(m)')
-savefig('problem2.9_y-z.png')
-show()
-
-
-
+savefig('problem2.19_y-z.png')
