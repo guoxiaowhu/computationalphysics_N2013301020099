@@ -1,4 +1,4 @@
-#This is a program to calculate problem 2.19
+#This is a program to calculate problem 3.8
 """
 Nonlinear Pendulum
 Updated on 4/15/2016
@@ -24,7 +24,7 @@ g=9.8 #local gravitational acceleration of Earth(m*s^(-2))
 l=1 #(m)
 theta0=pi*float(input('theta0(degree)='))/180
 theta.append(theta0)
-w0=0 #float(input('omega0(rad/s)='))
+w0=float(input('omega0(rad/s)='))
 w.append(w0)
 t.append(0.0)
 time=16*pi*sqrt(l/g)
@@ -51,10 +51,19 @@ plot
 '''
 plot(t,theta,color='blue')
 plot(t,the_lin,'--',color='red')
-legend(('nonlinear pendulum','linear pendulum'),'upper left')
+legend(('nonlinear pendulum','linear pendulum'),'lower left')
 title('Nonlinear Pendulum and Linear Pendulum',fontsize=20)
 xlabel('t(s)')
 xlim(0,t[-1])
 ylabel('theta(rad)')
 savefig('problem3.8.png')
+show()
+#Phase diagram
+plot(w,theta,color='blue')
+plot(w_lin,the_lin,'--',color='red')
+legend(('nonlinear pendulum','linear pendulum'),'upper right')
+title('phase diagram',fontsize=20)
+xlabel('omega(rad/s)')
+ylabel('theta(rad)')
+savefig('problem3.8 phase diagram.png')
 show()
