@@ -12,7 +12,7 @@
 - [第七次作业的链接](https://www.zybuluo.com/guoxiaowhu/note/340088)problem 2.19
 
 ##Homeworks of Chapter 3
--[The link of 8th homeworks](https://www.zybuluo.com/guoxiaowhu/note/346505)
+-[The link of 8th homeworks](https://www.zybuluo.com/guoxiaowhu/note/346505)problem 3.8
 
 ------
 
