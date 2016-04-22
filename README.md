@@ -14,7 +14,7 @@
 ##The 8th,9th homeworks (Chapter 3)
 -[The link of 8th homeworks](https://www.zybuluo.com/guoxiaowhu/note/346505)problem 3.8
 
--[The link of 9th homeworks](https://www.zybuluo.com/guoxiaowhu/note/353303)problem 3.21
+-[The link of 9th homeworks](https://www.zybuluo.com/guoxiaowhu/note/353303)from L1 to problem 3.21
 
 ------
 
