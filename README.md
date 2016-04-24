@@ -5,7 +5,7 @@
 这里是[第三次作业的链接](https://github.com/guoxiaowhu/computationalphysics_N2013301020099/blob/master/Third%20homework.md)
 ##The 4th,5th homeworks（第一章作业）
 第四次作业要输入公式，在作业部落上写，在这里给出[第四次作业的链接](https://www.zybuluo.com/guoxiaowhu/note/318362)
-，[第五次作业的链接](https://www.zybuluo.com/guoxiaowhu/note/338753)（editing……）
+，[第五次作业的链接](https://www.zybuluo.com/guoxiaowhu/note/338753)
 ##The 6th,7th homeworks（第二章）
 - [第六次作业的链接](https://www.zybuluo.com/guoxiaowhu/note/331396)problem 2.9（editing……）
 本来打算用三维显示的，结果一运行vpython就崩溃，没有办法显示三维图像，正在想办法……先用两张二维的图展示
@@ -14,7 +14,9 @@
 ##The 8th,9th homeworks (Chapter 3)
 -[The link of 8th homeworks](https://www.zybuluo.com/guoxiaowhu/note/346505)problem 3.8
 
--[The link of 9th homeworks](https://www.zybuluo.com/guoxiaowhu/note/353303)problem 3.21
+-[The link of 9th homeworks](https://www.zybuluo.com/guoxiaowhu/note/353303)problem 3.21.
+
+By the way, I had finshed [The 5th homework problem1.6](https://www.zybuluo.com/guoxiaowhu/note/338753),please have a look,thanks! 
 
 ------
 
