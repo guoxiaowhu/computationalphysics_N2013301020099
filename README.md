@@ -16,8 +16,7 @@
 
 -[The link of 9th homeworks](https://www.zybuluo.com/guoxiaowhu/note/353303)problem 3.21.
 
-By the way, I had finshed [The 5th homework problem1.6](https://www.zybuluo.com/guoxiaowhu/note/338753),please have a look,thanks! 
-The sixth homework will be finished gradually in the future.
+-[The link of 10th homework]()Lorenz model problem 3.26
 
 ------
 
