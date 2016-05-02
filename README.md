@@ -16,7 +16,7 @@
 
 -[The link of 9th homeworks](https://www.zybuluo.com/guoxiaowhu/note/353303)problem 3.21.
 
--[The link of 10th homework]()Lorenz model problem 3.26
+-[The link of 10th homework](https://www.zybuluo.com/guoxiaowhu/note/361126)Lorenz model problem 3.29
 
 ------
 
