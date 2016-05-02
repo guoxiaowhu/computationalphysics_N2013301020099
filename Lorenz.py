@@ -1,6 +1,6 @@
 """
 Lorenz model
-Updated on 4/28/2016
+Updated on 5/2/2016
 Author:GUO Xiao
 2013301020099
 SI unit
@@ -46,7 +46,7 @@ z_3=Lorenz_model(165)[3]
 #plot
 plot(t,z_1,color='blue')
 plot(t,z_2,color='green')
-plot(t,z_3,'--'color='red')
+plot(t,z_3,'--',color='red')
 legend(('r=163','r=164','r=165'),'upper left')
 title('Lorenz Model z-t',fontsize=15)
 xlabel('t')
