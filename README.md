@@ -19,7 +19,7 @@
 -[The link of 10th homework](https://www.zybuluo.com/guoxiaowhu/note/361126)Lorenz model problem 3.29
 
 ##Chapter 4
--[The link of 11th homework](https://www.zybuluo.com/guoxiaowhu/note/369633)(editing...)
+-[The link of 11th homework](https://www.zybuluo.com/guoxiaowhu/note/369633)
 
 
 ------
