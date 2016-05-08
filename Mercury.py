@@ -63,7 +63,7 @@ def precession(M):
     for i in range(len(r)-2):
         if (r[i+2]-r[i+1])*(r[i+1]-r[i])<0:#choose the perihelions and aphelions
             if r[i+1]>a:#choose the aphelions
-                if y[i+1]/x[i+1]>0:
+                if x[i+1]>0:
                     angle=arctan(y[i+1]/x[i+1])
                 else:
                     angle=pi+arctan(y[i+1]/x[i+1])
