@@ -1,5 +1,5 @@
 '''
-Resonance 
+Hyperion 
 Hyperion units
 
 '''
