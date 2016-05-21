@@ -52,10 +52,11 @@ while 1:
     #print dV 
           
     s=s+1
-    if dV<0.0001 and s>10:
+    if dV<0.0001 and s>1:
         break
 print s
 
+print alpha
 V=array(VV[-1])
 Ex=array(V0)
 Ey=array(V0)

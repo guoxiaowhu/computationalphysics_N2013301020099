@@ -45,7 +45,7 @@ def Jacobi(L):
 
         s=s+1
         print dV
-        if dV<error*(L-1)**2 and s>10:
+        if dV<error*(L-1)**2 and s>1:
         #if dV<error and s>10:
             break
     return s
@@ -86,8 +86,8 @@ def GS(L):
             for j in range(1,L-1):
                 dV=dV+abs(dVV[i][j])
         s=s+1
-        if dV<error*(L-1)**2 and s>10:
-        #if dV<error and s>10:
+        if dV<error*(L-1)**2 and s>1:
+        #if dV<error and s>1:
             break
     return s
 
@@ -131,8 +131,8 @@ def SOR(L):
         print dV,L 
           
         s=s+1
-        if dV<error*(L-1)**2 and s>10:
-        #if dV<error and s>10:
+        if dV<error*(L-1)**2 and s>1:
+        #if dV<error and s>1:
             break
     return s
 f=open('problem5.7.txt','w')
