@@ -113,13 +113,12 @@ def SOR(L):
         for i in range(1,L-1):
             for j in range(1,L-1):               
                 VV[s+1][i][j]=(VV[s][i+1][j]+VV[s+1][i-1][j]+VV[s][i][j+1]+VV[s+1][i][j-1])/4.0
+                if i==a and j>a-1 and j<b+1:
+                    VV[s+1][j][i]=1.0
+                if i==b and j>a-1 and j<b+1:
+                    VV[s+1][j][i]=-1.0
                 VV[s+1][i][j]=alpha*(VV[s+1][i][j]-VV[s][i][j])+VV[s][i][j]        
-        for i in [a]:
-            for j in range(a,b+1):
-                VV[s+1][j][i]=1.0
-        for i in [b]:
-            for j in range(a,b+1):
-                VV[s+1][j][i]=-1.0         
+         
         VV[s]=np.array(VV[s])
         VV[s+1]=np.array(VV[s+1])
         dVV=VV[s+1]-VV[s]
@@ -127,7 +126,6 @@ def SOR(L):
         dV=0
         for i in range(1,L-1):
             for j in range(1,L-1):
-
                  dV=dV+abs(dVV[i][j])
         print dV,L 
         s=s+1

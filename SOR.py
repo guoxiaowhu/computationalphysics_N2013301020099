@@ -30,25 +30,26 @@ s=0
 dx=0.1
 #iteration
 #for k in range(100):
+
 while 1:
     VV.append(V0)
     for i in range(1,len(V0)-1):
         for j in range(1,len(V0[1])-1):
-            VV[s+1][i][j]=(VV[s][i+1][j]+VV[s+1][i-1][j]+VV[s][i][j+1]+VV[s+1][i][j-1])/4.0
-    for i in [6]:
-        for j in range(6,15):
-            VV[s+1][j][i]=1.0
-    for i in [14]:
-        for j in range(6,15):
-            VV[s+1][j][i]=-1.0
+            VV[s+1][j][i]=(VV[s][j][i+1]+VV[s+1][j][i-1]+VV[s][j+1][i]+VV[s+1][j-1][i])/4.0
+            if i==6 and j>5 and j<15:
+                VV[s+1][j][i]=1.0
+            if i==14 and j>5 and j<15:
+                VV[s+1][j][i]=-1.0
+            VV[s+1][j][i]=alpha*(VV[s+1][j][i]-VV[s][j][i])+VV[s][j][i]
+
     VV[s]=np.array(VV[s])
     VV[s+1]=np.array(VV[s+1])
     dVV=VV[s+1]-VV[s]
-    VV[s+1]=alpha*dVV+VV[s]
+
     dV=0
     for i in range(1,len(V0)-1):
         for j in range(1,len(V0[1])-1):
-            dV=dV+abs(alpha*dVV[i][j])
+            dV=dV+abs(dVV[i][j])
     #print dV 
           
     s=s+1
