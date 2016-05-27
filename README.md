@@ -24,7 +24,10 @@
 -[The link of 12th homework](https://www.zybuluo.com/guoxiaowhu/note/377259)
 
 ##Chapter 5
--[The link of 13th homework](https://www.zybuluo.com/guoxiaowhu/note/385166)Exercise 5.7
+-[The link of 13th homework](https://www.zybuluo.com/guoxiaowhu/note/385166)Exercise 5.7(Updated)
+
+##Chapter 6
+-[The link of 14th homework](https://www.zybuluo.com/guoxiaowhu/note/391276)Exercise 6.13 and so on
 
 
 ------
