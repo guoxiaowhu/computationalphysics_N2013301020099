@@ -29,6 +29,8 @@
 ##Chapter 6
 -[The link of 14th homework](https://www.zybuluo.com/guoxiaowhu/note/391276)Exercise 6.13 and so on
 
+##Chapter 7
+-[The link of 15th homework](https://www.zybuluo.com/guoxiaowhu/note/398577)Exercise 7.3 and so on
 
 ------
 
