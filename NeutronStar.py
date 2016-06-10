@@ -2,7 +2,7 @@
 Neutron star:pure neutron Fermi gas model
 Author:GUO Xiao
 2013301020099
- unit
+SI units
 '''
 import numpy as np
 from pylab import *
@@ -29,7 +29,7 @@ def p_(rho):#pressure  equation of state
     return p_id
 
 def NS(rho0):
-    dr=100#(m)
+    dr=10#(m)
     r=[0,dr]
     rho=[rho0,0.9999*rho0]#actually drho=0 at r=0, such that avoid infinite
     p=[p_(rho0),p_(0.9999*rho0)]
@@ -58,7 +58,7 @@ def NS(rho0):
     #f.close()
     return [R,M,r,p,m,rho]
 
-
+'''
 NS1=NS(1e18)
 r=NS1[2]
 p=NS1[3]
@@ -67,62 +67,46 @@ rho=NS1[5]
 figure(figsize=[8,15])
 subplot(311)
 plot(r,p)
-title('p(r)')
+title('p(r) pressure')
 xlabel('r/km')
-ylabel('p/')
+ylabel('p/Pa')
 #text(6e3,0.8e-15,'nonrelativistic case')
 subplot(312)
 plot(r,m)
-title('m(r)')
+title('m(r) mass')
 xlabel('r/km')
 ylabel('m(solar mass)')
 #text(2e3,0.3,'nonrelativistic case')
 subplot(313)
 plot(r,rho)
-title('$\rho(r)$')
+title('rho(r) density')
 xlabel('r/km')
-ylabel('$\rho(kg/m^3)$')
+ylabel('$rho(kg/m^3)$')
 savefig('Neutron star .png')
 show()
 '''
 #R-M diagram
-RNR=[]
-MNR=[]
-RUR=[]
-MUR=[]
+RNS=[]
+MNS=[]
 
-for i in range(100):
-    NR=NS(i*1e-5,1,0.7636,1.914,5.0/3.0)
-    RNR.append(NR[0])
-    MNR.append(NR[1])
-    UR=NS(i*1e-5,1.77466,1.36,0.7779,4.0/3.0)
-    RUR.append(UR[0])
-    MUR.append(UR[1])
-for i in range(300):
-    NR=NS(i*5e-3,1,0.7636,1.914,5.0/3.0)
-    RNR.append(NR[0])
-    MNR.append(NR[1])
-    UR=NS(i*5e-3,1.77466,1.36,0.7779,4.0/3.0)
-    RUR.append(UR[0])
-    MUR.append(UR[1])
-for i in range(100):
-    NR=NS(i*2e0,1,0.7636,1.914,5.0/3.0)
-    RNR.append(NR[0])
-    MNR.append(NR[1])
-    UR=NS(i*2e0,1.77466,1.36,0.7779,4.0/3.0)
-    RUR.append(UR[0])
-    MUR.append(UR[1])
-   
-   
+for i in range(1,500):
+    N=NS(i*2e15)
+    RNS.append(N[0])
+    MNS.append(N[1])
+
+for i in range(1,500):
+    N=NS(i*1e18)
+    RNS.append(N[0])
+    MNS.append(N[1])
+
 figure(figsize=[8,8]) 
-scatter(MNR,RNR,s=1,color='blue')
-scatter(MUR,RUR,s=1)
-xlabel('M(solar mass)')
-ylabel('R(km)')
+
+plot(RNS,MNS,'-',color='black',linewidth=2)
+xlabel('R(km)')
+ylabel('M(solar mass)')
 xlim(0,)
 ylim(0,)
-legend(('nonrelativistic','ultra-relativistic'),'upper right')
-title('R-M diagram')
-savefig('Neutron Star R-M diagram.png')
+title('M-R diagram of Neutron star')
+savefig('Neutron Star R-M diagram .png')
 show()
-'''
+
