@@ -58,7 +58,7 @@ def NS(rho0):
     #f.close()
     return [R,M,r,p,m,rho]
 
-'''
+#
 NS1=NS(1e18)
 r=NS1[2]
 p=NS1[3]
@@ -70,13 +70,11 @@ plot(r,p)
 title('p(r) pressure')
 xlabel('r/km')
 ylabel('p/Pa')
-#text(6e3,0.8e-15,'nonrelativistic case')
 subplot(312)
 plot(r,m)
 title('m(r) mass')
 xlabel('r/km')
 ylabel('m(solar mass)')
-#text(2e3,0.3,'nonrelativistic case')
 subplot(313)
 plot(r,rho)
 title('rho(r) density')
@@ -84,7 +82,7 @@ xlabel('r/km')
 ylabel('$rho(kg/m^3)$')
 savefig('Neutron star .png')
 show()
-'''
+
 #R-M diagram
 RNS=[]
 MNS=[]
