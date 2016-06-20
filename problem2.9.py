@@ -8,6 +8,8 @@ SI unit
 import numpy as np
 from pylab import *
 from math import *
+import mpl_toolkits.mplot3d
+
 x=[]
 y=[]
 z=[]
@@ -49,8 +51,8 @@ vy.append(vy0)
 vz.append(vz0)
 v.append(v0)
 t.append(0.0)
-time=float(input('total time='))
-dt=float(input('time step='))
+
+dt=0.1
 #parabola
 xp.append(0)
 yp.append(0)
@@ -59,8 +61,9 @@ zp.append(0)
 '''
 calculation
 '''
+i=0
 f=open('problem2.9.txt','w')
-for i in range(int(time/dt)):
+while 1:
     B2=(1-a*z[i]/T0)**alpha*B20
     vx.append(vx[i]+dt*(-B1/m*vx[i]-B2/m*v[i]*vx[i]-2*w*vz[i]*cos(lat)+2*w*vy[i]*sin(lat)))
     vy.append(vy[i]+dt*(-B1/m*vy[i]-B2/m*v[i]*vy[i]-2*w*vx[i]*sin(lat)))
@@ -75,6 +78,9 @@ for i in range(int(time/dt)):
     zp.append(vz0*t[i+1]-g*t[i+1]**2/2)
     print t[-1],x[-1],y[-1],z[-1]
     print >> f,x[-1],y[-1],z[-1]
+    i+=1
+    if z[-1]<=0:
+        break
 f.close()
 
 #plot 
@@ -83,7 +89,9 @@ plot(xp,zp,'--',color='blue')
 legend(('z-x','z-x parabola'))
 title('Problem 2.9 z-x',fontsize=20)
 xlabel('x(m)')
+xlim(0,)
 ylabel('z(m)')
+ylim(0,)
 savefig('problem2.9_x-z.png')
 show()
 
@@ -93,8 +101,18 @@ legend(('z-y','z-y parabola'))
 title('Problem 2.9 z-y',fontsize=20)
 xlabel('y(m)')
 ylabel('z(m)')
+ylim(0,)
 savefig('problem2.9_y-z.png')
 show()
 
+#3D plot
+fig = figure()
+ax = fig.add_subplot(111, projection='3d')
+ax.plot(x,y,z,color='blue')
+ax.set_xlabel('x/m')
+ax.set_ylabel('y/m')
+ax.set_zlabel('z/m')
+savefig('problem2.9 3D.png')
+show()
 
 
