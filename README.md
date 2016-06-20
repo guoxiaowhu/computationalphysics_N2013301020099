@@ -33,7 +33,7 @@
 -[The link of 15th homework](https://www.zybuluo.com/guoxiaowhu/note/398577)Exercise 7.3 and so on
 
 ##The Final Exam
--[Final homework]() (waitting)
+-[*Final homework*](https://github.com/guoxiaowhu/computationalphysics_N2013301020099/blob/master/final%20homework.pdf) 
 
 
 
