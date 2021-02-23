@@ -102,22 +102,3 @@ $$E=mc^2$$
 
 Now let me introduce myself,I am a student in [school of physics and technology,Wuhan University](http://physics.whu.edu.cn/).
 I introduce my major **physics** by a series of *formulas*:
-##Classical mechanics
-###Newtonian mechanics
-
-$$\vec{F}=m\vec{a}$$
-
-###Analytical mechanics
-####Lagrange equation
-
-##Electrodynamics
-**differential form**
-
-$$\nabla\cdot\vec{E}=\frac{\rho}{\epsilon_0}$$
-
-$$\nabla\times\vec{E}=-\frac{\partial\vec{B}}{\partial t}$$
-
-$$\nabla\cdot\vec{B}=0$$
-
-$$\nabla\times\vec{B}=\mu_0\vec{j}+\mu_0\epsilon_0\frac{\partial\vec{E}}{\partial t}$$
-……
